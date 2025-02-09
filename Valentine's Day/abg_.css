@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR LOVE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        body {
+            background: #ffffff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'), linear-gradient(135deg, #fbecec, #ffffff);
+            background: linear-gradient(135deg, #fbecec, #ffffff);
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px 10px;
+            background: #f5f5f5;
+            color: #333;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: rgba(240, 240, 240, 0.95);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #666;
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 50%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .video-container video {
+            width: 60%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-top: 20px;
+            autoplay: true;
+        }
+        .invitation-card {
+            background: #bd2a2a;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            max-width: 400px;
+        }
+        .vinyl {
+            width: 150px;
+            height: 150px;
+            background: url("C:\Users\jreev\OneDrive\Desktop\png_vinyl_35597.png") no-repeat center center/cover;
+            border-radius: 50%;
+            animation: spin 5s linear infinite;
+            cursor: pointer;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .btn-container {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #666;
+        }
+        #no-btn:hover {
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+        }
+        .letter-box {
+            background: #fff3f3;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 15px;
+    line-height: 1.6;
+        }
+
+
+        .music-invitation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 70px; 
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+.music-section, .invitation-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+}
+
+
+.divider {
+    width: 3px;
+    height: 90%; 
+    background-color: #ccc;
+    align-self: center;
+}
+
+
+.cd-image {
+    width: 180px; 
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+
+.invitation-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #9e2b2b;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">FOR LOVE 💐 </div>
+    <p class="subtitle">By R</p>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#letter">Letter</a>
+        <a href="#music-invitation">Music</a>
+        <a href="#music-invitation">Invitation</a>
+        <a href="#video">Video</a>
+    </nav>
+    
+    <section id="home" class="section">
+
+        <a href="https://fontmeme.com/handwriting-fonts/"><img src="https://fontmeme.com/permalink/250208/6af80a9c2a4b99b00ccc774f0ed8c989.png" alt="handwriting-fonts" border="0"></a>
+        <div class="image-container">
+            <div class="image-container flex justify-center gap-4">
+            <img src="C:\Users\jreev\OneDrive\Desktop\IMG_20241201_220306_490.jpg" alt="Special Image">
+            <img src="C:\Users\jreev\OneDrive\Desktop\IMG_20241201_220304_782.jpg" alt="Another Special Image">
+        </div>
+    </section>
+    
+    <section id="letter" class="section">
+        <a href="https://fontmeme.com/handwriting-fonts/"><img src="https://fontmeme.com/permalink/250208/c7fa1d7146f7fd7c0dfc1bc523767c7c.png" alt="handwriting-fonts" border="0"></a>
+        <div class="letter-box">
+            <p>My Love,</p>
+            <p>I don’t even know where to begin because there are so many things I want to say. But first, I just want you to know how deeply I love and appreciate you. You are the most incredible person, and every single day, I feel so lucky to have you by my side.<p> 
+            <p>Loving you has been the easiest and most beautiful thing in my life. You make my world brighter with your smile, and your presence alone gives me a sense of peace I’ve never known before. I admire so much about you—your strength, your kindness, and your passion. With you, even the most ordinary days become unforgettable.<p>
+            <p>I want you to know that no matter what, I will always be here for you—through the good times and the tough ones. I believe in you and will support you in every decision you make, every dream you chase, and every challenge you face. Your happiness and success mean everything to me, and I will always stand beside you, cheering you on and lifting you up.<p>
+            <p>I can’t wait for us to grow together, to learn from each other, and to build the future we both dream of. I know that whatever life brings, as long as we have each other, we can make it through anything. I look forward to all the love, laughter, and adventures that are waiting for us.<p>
+            <p>Your Love,</p>
+            <p>Reeves</p>
+        </div>
+    </section>
+
+
+
+
+    <section id="music-invitation" class="section">
+        <div class="music-invitation-container">
+            <!-- Music Section -->
+            <div class="music-section">
+                <a href="https://fontmeme.com/handwriting-fonts/"><img src="https://fontmeme.com/permalink/250208/bd677cda862be4538a4044456f977ce6.png" alt="handwriting-fonts" border="0"></a>
+                <a href="https://www.youtube.com/watch?v=YWN81V7ojOE" target="_blank">
+                    <img src="C:\Users\jreev\OneDrive\Desktop\png_vinyl_35597.png" 
+                         alt="CD Image" class="cd-image">
+                </a>
+            </div>
+    
+            <!-- Vertical Divider -->
+            <div class="divider"></div>
+    
+            <!-- Invitation Section -->
+            <div class="invitation-section">
+                <a href="https://fontmeme.com/handwriting-fonts/"><img src="https://fontmeme.com/permalink/250208/9242d2e157aeef2dcc4184de60b30f22.png" alt="handwriting-fonts" border="0"></a>
+                <div class="invitation-card">
+                    <p>Post-Valentine's Day celebration!</p>
+                    <p><strong>📅 Date:</strong> February 15, 2025</p>
+                    <p><strong>📍 Location:</strong> [TBA]</p>
+                    <div class="btn-container">
+                        <button class="btn" onclick="alert('Thank you for confirming!')">Yes</button>
+                        <button class="btn" id="no-btn">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="video" class="section">
+        <h2>📽️🎞️🤎</h2>
+        <div class="video-container">
+            <video autoplay controls>
+                <source src="./2025-02-09-040656504.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>

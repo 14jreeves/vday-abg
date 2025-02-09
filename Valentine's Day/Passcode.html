@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Passcode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbecec, #ffffff);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .passcode-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #bd2a2a;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #9e2b2b;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="passcode-container">
+        <h2>Enter Passcode</h2>
+        <input type="password" id="passcode" class="input-field" placeholder="Passcode">
+        <button class="btn" onclick="validatePasscode()">Unlock</button>
+        <p id="error-message" class="error"></p>
+    </div>
+    
+    <script>
+        function validatePasscode() {
+            const passcode = document.getElementById("passcode").value;
+            if (passcode === "010225") {
+                window.location.href = "abg_.html";
+            } else {
+                document.getElementById("error-message").innerText = "Incorrect passcode.";
+            }
+        }
+    </script>
+</body>
+</html>
